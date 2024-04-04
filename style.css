@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins','sans-serif';
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background:linear-gradient(135deg,#153677,#4e085f);
+}
+main>h2{
+    font-size: 40px;
+    color: rgb(0, 255, 174);
+    position: relative;
+    top:40px;
+}
+.content{
+
+    width: 100%;
+    max-width:450px ;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    border-radius: 10px;
+    padding: 40px 30px 70px ;
+}
+.content header{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+.content header h2{
+    font-size: 20px;
+    font-weight: 800;
+    color:#153677;
+}
+.content header img{
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+}
+.info>*{
+    outline: none;
+    border: none;
+    border-radius:25px;
+    
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(181, 181, 181);
+    border-radius: 25px;
+    padding-left: 10px;
+    background-color: #edeef0;
+    
+}
+.info input{
+    width: 100%;
+    flex: 1;
+    padding: 10px 5px;
+    background-color: transparent;
+    color: #000000;
+    font-size: 18px;
+    
+}
+.info button{
+    z-index: 1000;
+    padding: 11px 35px;
+    background-color: #ff5945;
+    color: #fff;
+    
+}
+#list-container{
+    padding-left: 0px;
+}
+#list-container li{
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 8px 12px 48px ;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+}
+#list-container li::before{
+    content: "";
+    position: absolute;
+    background-image: url(images/unchecked.png);
+    height: 25px;
+    width: 25px;
+    background-position: center;
+    background-size: cover;
+    left: 8px;
+    top: 12px;
+    border-radius: 50%;
+    
+}
+
+#list-container li.cheked{
+    color: #555;
+    text-decoration: line-through;
+}
+#list-container li.cheked::before{
+    background-image: url(images/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    font-size: 22px;
+    /* top: 5px; */
+    color:#555;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+
+
+}
+ul li span:hover{
+    background-color: #edeef0;
+    border-radius: 50%;
+}
